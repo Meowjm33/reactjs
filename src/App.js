@@ -4,6 +4,8 @@ import Bmi from "./Bmi"
 import Joke from "./Joke"
 import Header from "./Header"
 import Footer from "./Footer"
+import Map from "./Map"
+import Temperature from "./Temperature"
 export default function App(){
   return(
     <>
@@ -16,7 +18,10 @@ export default function App(){
   <Route path="/bmi" element={<Bmi/>}></Route>
   {/* path="" here, path ko notation bhitra lekheko CHeez URL ma hanyo bhane Jun .jsx file janu cha tei ma jancha */}
   <Route path="/joke" element={<Joke/>}></Route>
+  <Route path="/temperature" element={<Temperature/>}></Route>
+  <Route path="/map" element={<Map/>}></Route>
   </Routes>
+  
   <Footer/>
   </BrowserRouter>
     </>
